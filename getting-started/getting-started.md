@@ -2,7 +2,9 @@
 description: Get started with Next.js in the official documentation, and learn more about all our features!
 ---
 
-> Next.js 13 was recently released, [learn more](https://nextjs.org/blog/next-13) and see the [upgrade guide](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13). Version 13 also introduces beta features like the [`app` directory](https://beta.nextjs.org/docs/app-directory-roadmap) that works alongside the `pages` directory (stable) for incremental adoption. You can continue using `pages` in Next.js 13, but if you want to try the new `app` features, [see the new beta docs](https://beta.nextjs.org/docs).
+> Next.js 13 은 최근에 릴리즈 되었습니다. [더 알아보기](https://nextjs.org/blog/next-13) 혹은 [13 버전으로 업그레이드하기](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13) 에서 알아보세요.
+> 13버전은 `page` directory 처럼 동작하는 [`app` directory](https://beta.nextjs.org/docs/app-directory-roadmap) 와 같은 beta 기능을 도입합니다.
+> 13버전에서 `pages` 기능을 사용할 수 있지만, 새로운 `app` 기능을 사용해 볼 수 있습니다. [새로운 beta 문서를 알아보기](https://beta.nextjs.org/docs).
 
 # Getting Started
 
