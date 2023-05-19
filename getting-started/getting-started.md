@@ -6,11 +6,12 @@ description: Get started with Next.js in the official documentation, and learn m
 > 13버전은 `page` directory 처럼 동작하는 [`app` directory](https://beta.nextjs.org/docs/app-directory-roadmap) 와 같은 beta 기능을 도입합니다.
 > 13버전에서 `pages` 기능을 사용할 수 있지만, 새로운 `app` 기능을 사용해 볼 수 있습니다. [새로운 beta 문서를 알아보기](https://beta.nextjs.org/docs).
 
-# Getting Started
+# 시작하기
 
-Welcome to the Next.js documentation!
+Next.js 문서에 오신 것을 환영합니다 !
 
-If you're new to Next.js, we recommend starting with the [learn course](https://nextjs.org/learn/basics/create-nextjs-app). The interactive course with quizzes will guide you through everything you need to know to use Next.js.
+Next.js 가 처음이신 경우, 우리는 [학습 과정](https://nextjs.org/learn/basics/create-nextjs-app) 을 보시는 것을 추천합니다.
+퀴즈가 포함된 대화형 과정은 Next.js를 사용하기 위해 알아야 할 모든 것을 알려줍니다.
 
 If you have questions about anything related to Next.js, you're always welcome to ask our community on [GitHub Discussions](https://github.com/vercel/next.js/discussions).
 
