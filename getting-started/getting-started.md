@@ -51,9 +51,9 @@ pnpm create next-app --typescript
 
 `create-next-app` 을 사용하는 방법에 대한 더 많은 정보는 [`create-next-app` documentation](/docs/api-reference/create-next-app.md)에서 볼 수 있습니다.
 
-## Manual Setup
+## 수동 설정
 
-Install `next`, `react` and `react-dom` in your project:
+`next` , `react` , `react-dom` 를 당신의 프로젝트에 설치하세요:
 
 ```bash
 npm install next react react-dom
@@ -63,7 +63,7 @@ yarn add next react react-dom
 pnpm add next react react-dom
 ```
 
-Open `package.json` and add the following `scripts`:
+`package.json` 을 열고 `scripts` 를 추가하세요:
 
 ```json
 "scripts": {
@@ -74,23 +74,27 @@ Open `package.json` and add the following `scripts`:
 }
 ```
 
-These scripts refer to the different stages of developing an application:
+이 스크립트들은 어플리케이션에서의 서로다른 개발단계를 나타냅니다: 
 
-- `dev` - Runs [`next dev`](/docs/api-reference/cli.md#development) to start Next.js in development mode
-- `build` - Runs [`next build`](/docs/api-reference/cli.md#build) to build the application for production usage
-- `start` - Runs [`next start`](/docs/api-reference/cli.md#production) to start a Next.js production server
-- `lint` - Runs [`next lint`](/docs/api-reference/cli.md#lint) to set up Next.js' built-in ESLint configuration
+- `dev` - [`next dev`](/docs/api-reference/cli.md#development) 실행은 Next.js의 개발서버를 시작하는 것과 같아요.
+- `build` - [`next build`](/docs/api-reference/cli.md#build) 실행은 운영서버 사용을 위한 어플리케이션 빌드단계예요.
+- `start` - [`next start`](/docs/api-reference/cli.md#production) 실행은 Next.js의 운영서버를 시작하는 것과 같아요.
+- `lint` - Runs [`next lint`](/docs/api-reference/cli.md#lint) 실행은 Next.js의 내장된 ESLint 실행과 같아요.
 
-Create two directories `pages` and `public` at the root of your application:
+어플리케이션의 최상위에 `pages`와 `public` 두 개의 폴더를 만듭시다: 
 
-- `pages` - Associated with a route based on their file name. For example, `pages/about.js` is mapped to `/about`
-- `public` - Stores static assets such as images, fonts, etc. Files inside `public` directory can then be referenced by your code starting from the base URL (`/`).
+- `pages` - 파일이름들을 기반으로 경로와 연결됩니다. 예를들어, `pages/about.js` 는 `/about` 와 연결되죠.
+- `public` - 이미지나 폰트 등의 정적 에셋들의 저장소라고 보면 돼요. `public` 폴더 내의 파일들은 기본 URL인 (`/`) 을 시작하는 코드에서 참조할 수 있어요.
 
-Next.js is built around the concept of [pages](/docs/basic-features/pages.md). A page is a [React Component](https://react.dev/learn/your-first-component) exported from a `.js`, `.jsx`, `.ts`, or `.tsx` file in the `pages` directory. You can even add [dynamic route](/docs/routing/dynamic-routes) parameters with the filename.
+Next.js 는 [pages](/docs/basic-features/pages.md) 개념을 기반으로 구축되었습니다. 
+페이지는 `pages` 속의 `.js`, `.jsx`, `.ts`, `.tsx` 확장자를 가진 [React Component](https://react.dev/learn/your-first-component) 로 이루어져 있습니다.
+파일이름과 함께 [동적 경로](/docs/routing/dynamic-routes)로 파라미터를 추가할 수도 있습니다.
 
-Inside the `pages` directory, add the `index.js` file to get started. This is the page that is rendered when the user visits the root of your application.
 
-Populate `pages/index.js` with the following contents:
+`pages` 폴더로 들어가서, 시작하기위한 `index.js` 파일을 추가합시다.
+이 페이지는 사용자가 당신의 어플리케이션을 방문했을 때 가장 첫번째로 보여질 페이지 입니다.
+
+`pages/index.js` 를 아래와 같은 내용으로 채워봅시다:
 
 ```jsx
 function HomePage() {
@@ -100,42 +104,42 @@ function HomePage() {
 export default HomePage
 ```
 
-After the set up is complete:
+설치가 완료된 후:
 
-- Run `npm run dev` or `yarn dev` or `pnpm dev` to start the development server on `http://localhost:3000`
-- Visit `http://localhost:3000` to view your application
-- Edit `pages/index.js` and see the updated result in your browser
+- 개발서버 `http://localhost:3000`에 접속할 수 있도록 `npm run dev` or `yarn dev` or `pnpm dev` 를 실행하세요.
+- `http://localhost:3000` 를 방문해서 당신의 어플리케이션을 구경하세요.
+- `pages/index.js` 를 수정하고, 업데이트된 당신의 브라우저를 확인하세요.
 
-So far, we get:
+지금까지, 우리는:
 
-- Automatic compilation and [bundling](/docs/advanced-features/compiler.md)
-- [React Fast Refresh](https://nextjs.org/blog/next-9-4#fast-refresh)
-- [Static generation and server-side rendering](/docs/basic-features/data-fetching/overview.md) of [`pages/`](/docs/basic-features/pages.md)
-- [Static file serving](/docs/basic-features/static-file-serving.md) through `public/` which is mapped to the base URL (`/`)
+- 자동 컴파일 and [빌드](/docs/advanced-features/compiler.md)
+- [빠른 새로고침 반응](https://nextjs.org/blog/next-9-4#fast-refresh)
+- [정적 생성 및 서버 측 렌더링](/docs/basic-features/data-fetching/overview.md) of [`pages/`](/docs/basic-features/pages.md)
+URL (`/`) 을 통해 매핑되는 `public/` 통한 [정적파일 제공](/docs/basic-features/static-file-serving.md) 
 
-In addition, any Next.js application is ready for production from the start. Read more in our [Deployment documentation](/docs/deployment.md).
+추가로, 어느 Next.js 어플리케이션이든 처음으로부터 만들 준비가 되어있습니다. [Deployment documentation](/docs/deployment.md)에서 더 읽어보세요.
 
-## Related
+## 관련되어서
 
-For more information on what to do next, we recommend the following sections:
+다음에 할 것에 대한 정보를 제공할게요. 다음 섹션을 권장합니다:
 
 <div class="card">
   <a href="/docs/basic-features/pages.md">
     <b>Pages:</b>
-    <small>Learn more about what pages are in Next.js.</small>
+    <small>Next.js 에서 page가 무엇인지</small>
   </a>
 </div>
 
 <div class="card">
   <a href="/docs/basic-features/built-in-css-support.md">
     <b>CSS Support:</b>
-    <small>Built-in CSS support to add custom styles to your app.</small>
+    <small>당신만의 커스텀 스타일을 위한 내장 CSS 지원</small>
   </a>
 </div>
 
 <div class="card">
   <a href="/docs/api-reference/cli.md">
     <b>CLI:</b>
-    <small>Learn more about the Next.js CLI.</small>
+    <small>Next.js CLI에 대해서 더 알아보기</small>
   </a>
 </div>
