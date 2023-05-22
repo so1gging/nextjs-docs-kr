@@ -13,17 +13,18 @@ Next.js 문서에 오신 것을 환영합니다 !
 Next.js 가 처음이신 경우, 우리는 [학습 과정](https://nextjs.org/learn/basics/create-nextjs-app) 을 보시는 것을 추천합니다.
 퀴즈가 포함된 대화형 과정은 Next.js를 사용하기 위해 알아야 할 모든 것을 알려줍니다.
 
-If you have questions about anything related to Next.js, you're always welcome to ask our community on [GitHub Discussions](https://github.com/vercel/next.js/discussions).
+만약 Next.js에 관련하여 질문(어느것이여도 상관없습니다!)이 있다면, 언제든 [GitHub Discussions](https://github.com/vercel/next.js/discussions)의 커뮤니티로 오셔서 질문해주세요!
 
-#### System Requirements
+#### 시스템 요구사항
 
-- [Node.js 16.8.0](https://nodejs.org/) or newer
-- MacOS, Windows (including WSL), and Linux are supported
+- [Node.js 16.8.0](https://nodejs.org/) or 최신버전
+- MacOS, Windows (including WSL), and Linux 에서 지원합니다.
 
-## Automatic Setup
+## 자동설정
 
-We recommend creating a new Next.js app using `create-next-app`, which sets up everything automatically for you. (You don't need to create an empty directory. `create-next-app` will make one for you.) To create a project, run:
+우리는 `create-next-app` 을 사용하여 새로운 Next.js 를 만들기를 권장합니다. `create-next-app` 은 모든 것을 자동적으로 설치할 수 있어요. (굳이 빈 폴더를 만들 필요가 없습니다. `create-next-app` 이 만들어 줄거에요.)
 
+프로젝트를 만들고, 실행하세요:
 ```bash
 npx create-next-app@latest
 # or
@@ -32,7 +33,7 @@ yarn create next-app
 pnpm create next-app
 ```
 
-If you want to start with a TypeScript project you can use the `--typescript` flag:
+TypeScript로 시작하고 싶으시다면, `--typescript` 플래그를 추가하세요:
 
 ```bash
 npx create-next-app@latest --typescript
@@ -42,13 +43,13 @@ yarn create next-app --typescript
 pnpm create next-app --typescript
 ```
 
-After the installation is complete:
+설치가 완료된 후:
 
-- Run `npm run dev` or `yarn dev` or `pnpm dev` to start the development server on `http://localhost:3000`
-- Visit `http://localhost:3000` to view your application
-- Edit `pages/index.js` and see the updated result in your browser
+- 개발서버 `http://localhost:3000`에 접속할 수 있도록 `npm run dev` or `yarn dev` or `pnpm dev` 를 실행하세요.
+- `http://localhost:3000` 를 방문해서 당신의 어플리케이션을 구경하세요.
+- `pages/index.js` 를 수정하고, 업데이트된 당신의 브라우저를 확인하세요.
 
-For more information on how to use `create-next-app`, you can review the [`create-next-app` documentation](/docs/api-reference/create-next-app.md).
+`create-next-app` 을 사용하는 방법에 대한 더 많은 정보는 [`create-next-app` documentation](/docs/api-reference/create-next-app.md)에서 볼 수 있습니다.
 
 ## Manual Setup
 
