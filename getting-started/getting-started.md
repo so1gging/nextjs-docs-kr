@@ -112,7 +112,7 @@ export default HomePage
 
 지금까지, 우리는:
 
-- 자동 컴파일 and [빌드](/docs/advanced-features/compiler.md)
+- 자동 컴파일 and [빌드](../advanced-features/compiler.md)
 - [빠른 새로고침 반응](https://nextjs.org/blog/next-9-4#fast-refresh)
 - [정적 생성 및 서버 측 렌더링](/docs/basic-features/data-fetching/overview.md) of [`pages/`](/docs/basic-features/pages.md)
 URL (`/`) 을 통해 매핑되는 `public/` 통한 [정적파일 제공](/docs/basic-features/static-file-serving.md) 
