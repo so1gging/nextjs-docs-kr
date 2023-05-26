@@ -1,11 +1,12 @@
 ---
-description: Learn about the Next.js Compiler, written in Rust, which transforms and minifies your Next.js application.
+설명: Next.js 빌드에 대해 알아봅시다. 
+description: Learn about the Next.js Compiler, Rust 로 작성하고, Next.js 어플리케이션을 변형하거나 축소합니다.
 ---
 
-# Next.js Compiler
+# Next.js 빌드
 
 <details open>
-  <summary><b>Version History</b></summary>
+  <summary><b>버전 내역</b></summary>
 
 | Version   | Changes                                                                                                                                                                                                  |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
